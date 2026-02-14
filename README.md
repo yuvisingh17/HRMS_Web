@@ -1,19 +1,21 @@
 # HRMS Lite
 
 HRMS Lite is a lightweight Human Resource Management System built as a full-stack web application.  
-It allows an admin to manage employees and track daily attendance through a clean and production-style interface.
+It allows an admin to manage employees and track daily attendance through a clean, production-style interface.
+
+This project was built as part of a Full-Stack coding assignment to demonstrate API design, database modeling, frontend UX, and deployment readiness.
 
 ---
 
 ## Live Demo
 
-Frontend:
+Frontend:  
 https://hrms-web-gamma.vercel.app
 
-Backend API:
+Backend API:  
 https://hrms-web-hg0y.onrender.com
 
-GitHub Repository:
+GitHub Repository:  
 https://github.com/yuvsingh17/HRMS_Web
 
 ---
@@ -24,40 +26,40 @@ https://github.com/yuvsingh17/HRMS_Web
 
 - Add employee
 - Unique employee ID validation
-- Email validation
-- List employees
+- Email format validation
+- List all employees
 - Delete employee
 
 ### Attendance Management
 
-- Mark attendance
+- Mark attendance (Present / Absent)
 - Prevent duplicate same-day attendance
 - View attendance records per employee
 
 ### UI/UX
 
-- Clean production layout
+- Clean professional layout
 - Loading states
 - Empty states
 - Error handling
-- Responsive design
+- Responsive interface
 
 ---
 
 ## Tech Stack
 
-Frontend:
+### Frontend
 
 - React (Vite)
 - Axios
 - CSS
 
-Backend:
+### Backend
 
 - FastAPI (Python)
 - MongoDB (Motor async driver)
 
-Deployment:
+### Deployment
 
 - Frontend → Vercel
 - Backend → Render
@@ -69,9 +71,11 @@ Deployment:
 
 ### Backend
 
+```bash
 cd backend
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+```
 
 Backend runs on:
 http://127.0.0.1:8000
@@ -80,9 +84,11 @@ http://127.0.0.1:8000
 
 ### Frontend
 
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
 Frontend runs on:
 http://localhost:5173
@@ -91,11 +97,17 @@ http://localhost:5173
 
 ## Environment Variables
 
-Backend `.env`:
+Backend `.env`
 
-Frontend `.env`:
+```
+MONGO_URL=your_mongodb_connection_string
+```
 
+Frontend `.env`
+
+```
 VITE_BASE_URL=http://127.0.0.1:8000
+```
 
 ---
 
@@ -104,15 +116,15 @@ VITE_BASE_URL=http://127.0.0.1:8000
 - Single admin user
 - No authentication required
 - Basic HR demo system
-- Attendance is stored per day per employee
-- No payroll or advanced HR features
+- Attendance stored per employee per day
+- Payroll and advanced HR features out of scope
 
 ---
 
 ## Limitations
 
 - No user roles
-- No editing employee records
+- No employee editing
 - No analytics dashboard
 - No authentication layer
 
@@ -121,11 +133,9 @@ VITE_BASE_URL=http://127.0.0.1:8000
 ## Author
 
 Built as part of a Full-Stack HRMS Lite assignment.
-Live App:
+
+Live App:  
 https://hrms-web-gamma.vercel.app
 
-GitHub Repo:
+GitHub Repo:  
 https://github.com/yuvsingh17/HRMS_Web
-
-The application is deployed and fully functional.
-Frontend and backend are connected to live database.
